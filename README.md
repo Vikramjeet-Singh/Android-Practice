@@ -18,3 +18,5 @@ Required: User can delete a task from the list by long pressing the task row.
 Note: Got a warning saying “Gradle Sync failed”. Not sure why am I getting this warning and how to fix this
 
 Walkthrough of all user stories:
+
+![](https://github.com/Vikramjeet-Singh/Android-Practice/blob/master/ToDoList_Walkthrough.gif)
