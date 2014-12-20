@@ -16,6 +16,6 @@ Required: Tasks in the list persist after app is closed and reopened
 
 Note: Got a warning saying “Gradle Sync failed”. Not sure why am I getting this warning and how to fix this
 
-Walkthrough of all user stories:
+Walkthrough of all user stories: 
 
 ![](https://github.com/Vikramjeet-Singh/Android-Practice/blob/master/ToDoList_Walkthrough.gif)
