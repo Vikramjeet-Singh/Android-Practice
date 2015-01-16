@@ -1,0 +1,910 @@
+17:15:47.393 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:15:47.408 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421370947408
+17:15:47.430 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface awdl0
+17:15:47.431 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+17:15:47.432 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:15:47.433 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:b409:16ff:fef6:4852%8
+17:15:47.434 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface awdl0
+17:15:47.435 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface en4
+17:15:47.435 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+17:15:47.436 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:15:47.436 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:aa20:66ff:fe01:7f09%12
+17:15:47.437 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /17.225.86.29
+17:15:47.437 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface en4
+17:15:47.438 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface en0
+17:15:47.438 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+17:15:47.438 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:15:47.438 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:3e15:c2ff:feda:3dda%4
+17:15:47.439 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /17.246.68.248
+17:15:47.439 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface en0
+17:15:47.440 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo0
+17:15:47.440 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+17:15:47.441 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+17:15:47.441 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%1
+17:15:47.444 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1
+17:15:47.445 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+17:15:47.445 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback multicast interface lo0
+17:15:47.449 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Listening on [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]].
+17:15:47.452 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Thu Jan 15 17:15:47 PST 2015, with address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:47.452 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertising the daemon address to the clients: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:47.453 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:15:47.454 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:15:47.468 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:15:47.476 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:15:47.512 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:15:47.514 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+17:15:47.519 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+17:15:47.520 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] requestStopOnIdleTimeout(10800000 MILLISECONDS) called on daemon
+17:15:47.521 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Idle timeout: waiting for daemon to stop or be idle for 10800000ms
+17:15:47.522 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Thu Jan 15 20:15:47 PST 2015
+17:15:47.537 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:54167 to /127.0.0.1:54166.
+17:15:47.580 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Build
+17:15:47.581 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:15:47.582 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}.
+17:15:47.582 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo} with connection: socket connection from /127.0.0.1:54166 to /127.0.0.1:54167.
+17:15:47.589 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@ebf5555] after 0.0 minutes of idle
+17:15:47.589 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:47.590 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:47.591 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:15:47.591 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:15:47.601 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:15:47.601 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421370947601
+17:15:47.602 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:15:47.603 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}. Dispatching build started information...
+17:15:47.604 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+17:15:47.609 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {SHELL=/bin/bash, HOME=/Users/Vikramjeet, TMPDIR=/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/, XPC_SERVICE_NAME=com.google.android.studio.15084, LOGNAME=Vikramjeet, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.o7YBujcwBB/Render, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, PATH=/usr/bin:/bin:/usr/sbin:/sbin, XPC_FLAGS=0x0, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KY9f8JZHeb/Listeners, USER=Vikramjeet}
+17:15:47.620 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.CloseInput
+17:15:47.621 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.2]
+17:15:47.625 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+17:15:47.626 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 32256). The daemon log file: /Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon/2.2.1/daemon-32256.out.log
+17:15:47.627 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+17:15:47.628 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+17:15:47.631 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+17:15:47.632 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:15:48.181 [DEBUG] [org.gradle.internal.resource.transport.http.JavaSystemPropertiesHttpProxySettings] Found java system property 'http.nonProxyHosts': local|*.local|169.254/16|*.169.254/16. Will ignore proxy settings for these hosts.
+17:15:48.300 [INFO] [org.gradle.tooling.internal.provider.DefaultPayloadClassLoaderRegistry] Creating ClassLoader ba194379-5abb-49f3-988c-4b6cc24fba5c from [Spec classpath:[file:/Applications/Android%20Studio.app/Contents/plugins/gradle/lib/gradle-tooling-api-2.2.jar, file:/Applications/Android%20Studio.app/Contents/plugins/gradle/lib/guava-jdk5-17.0.jar, file:/Applications/Android%20Studio.app/Contents/plugins/gradle/lib/gradle-base-services-2.2.jar, file:/Applications/Android%20Studio.app/Contents/plugins/gradle/lib/gradle-tooling-extension-api.jar, file:/Applications/Android%20Studio.app/Contents/lib/openapi.jar, file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/builder-model-1.0.0.jar, file:/Applications/Android%20Studio.app/Contents/plugins/google-cloud-tools/lib/gradle-appengine-builder-model-0.1.0.jar]] and [org.gradle.internal.classloader.FilteringClassLoader@59a51312].
+17:15:48.303 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on jars (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/jars-1).
+17:15:48.304 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:15:48.306 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+
+BUILD SUCCESSFUL
+
+Total time: 8.803 secs
+17:15:54.312 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+17:15:54.313 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).
+17:15:54.313 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo8942704330848203453.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo8942704330848203453_2izdyjle4uwpnfaaltfm6c8ab/InitScript/initscript).
+17:15:54.314 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo8942704330848203453.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo8942704330848203453_2izdyjle4uwpnfaaltfm6c8ab/InitScript/no_initscript).
+17:15:54.315 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/buildscript).
+17:15:54.316 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/no_buildscript).
+17:15:54.316 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/buildscript).
+17:15:54.317 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/no_buildscript).
+17:15:54.318 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/buildscript).
+17:15:54.319 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/no_buildscript).
+17:15:54.320 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/jars-1).
+17:15:54.321 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Plugin Resolution Cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/plugin-resolution) was closed 0 times.
+17:15:54.322 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+17:15:54.323 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2).
+17:15:54.332 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 20, cache instances: 4, modules served from cache: 47, artifacts: 29
+17:15:54.335 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 2, disk reads: 3 (avg: 0.0010 secs, total: 0.0040 secs)
+17:15:54.338 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:15:54.338 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.0040 secs
+17:15:54.339 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+17:15:54.548 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:15:54.549 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@ebf5555]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@41f4fa12 with state Running
+17:15:54.550 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@ebf5555]
+17:15:54.550 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421370954550
+17:15:54.550 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:54.551 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:15:54.552 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:15:54.553 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:15:54.556 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:15:54.556 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Thu Jan 15 20:15:54 PST 2015
+17:15:54.557 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@4a415b46]
+17:15:54.557 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:15:54.573 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=65592fed-ecd7-4a15-9653-2e4fc8e008f3.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:15:54.587 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Finished
+17:15:54.587 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@53d5264c
+17:15:54.588 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@53d5264c
+17:15:54.588 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received null
+17:15:54.588 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+17:15:54.588 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:15:54.591 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+17:29:22.651 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:54253 to /127.0.0.1:54166.
+17:29:22.666 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.Build
+17:29:22.666 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:29:22.667 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}.
+17:29:22.667 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo} with connection: socket connection from /127.0.0.1:54166 to /127.0.0.1:54253.
+17:29:22.668 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@1815401b] after 13.0 minutes of idle
+17:29:22.668 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:29:22.668 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:29:22.669 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:29:22.669 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:29:22.671 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:29:22.672 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371762672
+17:29:22.672 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:29:22.672 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}. Dispatching build started information...
+17:29:22.673 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+17:29:22.674 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {SHELL=/bin/bash, HOME=/Users/Vikramjeet, TMPDIR=/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/, XPC_SERVICE_NAME=com.google.android.studio.15084, LOGNAME=Vikramjeet, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.o7YBujcwBB/Render, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, PATH=/usr/bin:/bin:/usr/sbin:/sbin, XPC_FLAGS=0x0, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KY9f8JZHeb/Listeners, USER=Vikramjeet}
+17:29:22.674 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+17:29:22.675 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 32256). The daemon log file: /Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon/2.2.1/daemon-32256.out.log
+17:29:22.675 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+17:29:22.675 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:29:22.678 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.CloseInput
+17:29:22.678 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.2]
+17:29:22.678 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+17:29:22.679 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+17:29:22.685 [DEBUG] [org.gradle.internal.resource.transport.http.JavaSystemPropertiesHttpProxySettings] Found java system property 'http.nonProxyHosts': local|*.local|169.254/16|*.169.254/16. Will ignore proxy settings for these hosts.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavawarning: android/content/Intent.class(android/content:Intent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarActivity.class(android/support/v7/app:ActionBarActivity.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/Bundle.class(android/os:Bundle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Menu.class(android/view:Menu.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/MenuItem.class(android/view:MenuItem.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/View.class(android/view:View.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Button.class(android/widget:Button.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/EditText.class(android/widget:EditText.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBar.class(android/support/v7/app:ActionBar.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBar$Callback.class(android/support/v7/app:ActionBar$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Object.class(java/lang:Object.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Iterable.class(java/lang:Iterable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v4/widget/DrawerLayoutImpl.class(android/support/v4/widget:DrawerLayoutImpl.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewGroup.class(android/view:ViewGroup.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewParent.class(android/view:ViewParent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewManager.class(android/view:ViewManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/graphics/drawable/Drawable.class(android/graphics/drawable:Drawable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/graphics/drawable/Drawable$Callback.class(android/graphics/drawable:Drawable$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/KeyEvent.class(android/view:KeyEvent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/KeyEvent$Callback.class(android/view:KeyEvent$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/Parcelable.class(android/os:Parcelable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/InputEvent.class(android/view:InputEvent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/accessibility/AccessibilityEventSource.class(android/view/accessibility:AccessibilityEventSource.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarDrawerToggle.class(android/support/v7/app:ActionBarDrawerToggle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarDrawerToggle$TmpDelegateProvider.class(android/support/v7/app:ActionBarDrawerToggle$TmpDelegateProvider.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Activity.class(android/app:Activity.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater.class(android/view:LayoutInflater.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater$Factory2.class(android/view:LayoutInflater$Factory2.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater$Factory.class(android/view:LayoutInflater$Factory.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Window.class(android/view:Window.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Window$Callback.class(android/view:Window$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/View$OnCreateContextMenuListener.class(android/view:View$OnCreateContextMenuListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ComponentCallbacks2.class(android/content:ComponentCallbacks2.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ComponentCallbacks.class(android/content:ComponentCallbacks.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ContextThemeWrapper.class(android/view:ContextThemeWrapper.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ContextWrapper.class(android/content:ContextWrapper.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/Context.class(android/content:Context.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Fragment.class(android/app:Fragment.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/WindowManager.class(android/view:WindowManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/inputmethod/EditorInfo.class(android/view/inputmethod:EditorInfo.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/TextView.class(android/widget:TextView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface.class(android/content:DialogInterface.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface$OnCancelListener.class(android/content:DialogInterface$OnCancelListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface$OnDismissListener.class(android/content:DialogInterface$OnDismissListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/TextView$OnEditorActionListener.class(android/widget:TextView$OnEditorActionListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewTreeObserver.class(android/view:ViewTreeObserver.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewTreeObserver$OnPreDrawListener.class(android/view:ViewTreeObserver$OnPreDrawListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/String.class(java/lang:String.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/Serializable.class(java/io:Serializable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/text/DateFormat.class(java/text:DateFormat.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/text/SimpleDateFormat.class(java/text:SimpleDateFormat.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/Date.class(java/util:Date.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/util/Log.class(android/util:Log.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/AdapterView.class(android/widget:AdapterView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ListView.class(android/widget:ListView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileInputStream.class(java/io:FileInputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileNotFoundException.class(java/io:FileNotFoundException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileOutputStream.class(java/io:FileOutputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/IOException.class(java/io:IOException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/ObjectInputStream.class(java/io:ObjectInputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/ObjectOutputStream.class(java/io:ObjectOutputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/ArrayList.class(java/util:ArrayList.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/Calendar.class(java/util:Calendar.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ArrayAdapter.class(android/widget:ArrayAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Filterable.class(android/widget:Filterable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/BaseAdapter.class(android/widget:BaseAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ListAdapter.class(android/widget:ListAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Adapter.class(android/widget:Adapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/SpinnerAdapter.class(android/widget:SpinnerAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug.class(android/view:ViewDebug.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$ExportedProperty.class(android/view:ViewDebug$ExportedProperty.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$IntToString.class(android/view:ViewDebug$IntToString.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Override.class(java/lang:Override.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Annotation.class(java/lang/annotation:Annotation.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Target.class(java/lang/annotation:Target.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/ElementType.class(java/lang/annotation:ElementType.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Retention.class(java/lang/annotation:Retention.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/RetentionPolicy.class(java/lang/annotation:RetentionPolicy.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Error.class(java/lang:Error.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/pm/PackageManager.class(android/content/pm:PackageManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/pm/PackageManager$NameNotFoundException.class(android/content/pm:PackageManager$NameNotFoundException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/util/AndroidException.class(android/util:AndroidException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Exception.class(java/lang:Exception.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Throwable.class(java/lang:Throwable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/RuntimeException.class(java/lang:RuntimeException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/IntentSender.class(android/content:IntentSender.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/IntentSender$SendIntentException.class(android/content:IntentSender$SendIntentException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/CharSequence.class(java/lang:CharSequence.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Comparable.class(java/lang:Comparable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Editable.class(android/text:Editable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/GetChars.class(android/text:GetChars.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Spannable.class(android/text:Spannable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Spanned.class(android/text:Spanned.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Appendable.class(java/lang:Appendable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/MenuInflater.class(android/view:MenuInflater.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/BaseBundle.class(android/os:BaseBundle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: org/xmlpull/v1/XmlPullParser.class(org/xmlpull/v1:XmlPullParser.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/WindowManager$LayoutParams.class(android/view:WindowManager$LayoutParams.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$FlagToString.class(android/view:ViewDebug$FlagToString.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Dialog.class(android/app:Dialog.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 warnings
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavawarning: android/content/Intent.class(android/content:Intent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarActivity.class(android/support/v7/app:ActionBarActivity.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/Bundle.class(android/os:Bundle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Menu.class(android/view:Menu.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/MenuItem.class(android/view:MenuItem.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/View.class(android/view:View.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Button.class(android/widget:Button.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/EditText.class(android/widget:EditText.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBar.class(android/support/v7/app:ActionBar.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBar$Callback.class(android/support/v7/app:ActionBar$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Object.class(java/lang:Object.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Iterable.class(java/lang:Iterable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v4/widget/DrawerLayoutImpl.class(android/support/v4/widget:DrawerLayoutImpl.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewGroup.class(android/view:ViewGroup.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewParent.class(android/view:ViewParent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewManager.class(android/view:ViewManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/graphics/drawable/Drawable.class(android/graphics/drawable:Drawable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/graphics/drawable/Drawable$Callback.class(android/graphics/drawable:Drawable$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/KeyEvent.class(android/view:KeyEvent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/KeyEvent$Callback.class(android/view:KeyEvent$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/Parcelable.class(android/os:Parcelable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/InputEvent.class(android/view:InputEvent.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/accessibility/AccessibilityEventSource.class(android/view/accessibility:AccessibilityEventSource.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarDrawerToggle.class(android/support/v7/app:ActionBarDrawerToggle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/support/v7/app/ActionBarDrawerToggle$TmpDelegateProvider.class(android/support/v7/app:ActionBarDrawerToggle$TmpDelegateProvider.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Activity.class(android/app:Activity.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater.class(android/view:LayoutInflater.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater$Factory2.class(android/view:LayoutInflater$Factory2.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/LayoutInflater$Factory.class(android/view:LayoutInflater$Factory.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Window.class(android/view:Window.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/Window$Callback.class(android/view:Window$Callback.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/View$OnCreateContextMenuListener.class(android/view:View$OnCreateContextMenuListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ComponentCallbacks2.class(android/content:ComponentCallbacks2.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ComponentCallbacks.class(android/content:ComponentCallbacks.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ContextThemeWrapper.class(android/view:ContextThemeWrapper.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/ContextWrapper.class(android/content:ContextWrapper.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/Context.class(android/content:Context.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Fragment.class(android/app:Fragment.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/WindowManager.class(android/view:WindowManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/inputmethod/EditorInfo.class(android/view/inputmethod:EditorInfo.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/TextView.class(android/widget:TextView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface.class(android/content:DialogInterface.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface$OnCancelListener.class(android/content:DialogInterface$OnCancelListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/DialogInterface$OnDismissListener.class(android/content:DialogInterface$OnDismissListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/TextView$OnEditorActionListener.class(android/widget:TextView$OnEditorActionListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewTreeObserver.class(android/view:ViewTreeObserver.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewTreeObserver$OnPreDrawListener.class(android/view:ViewTreeObserver$OnPreDrawListener.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/String.class(java/lang:String.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/Serializable.class(java/io:Serializable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/text/DateFormat.class(java/text:DateFormat.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/text/SimpleDateFormat.class(java/text:SimpleDateFormat.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/Date.class(java/util:Date.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/util/Log.class(android/util:Log.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/AdapterView.class(android/widget:AdapterView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ListView.class(android/widget:ListView.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileInputStream.class(java/io:FileInputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileNotFoundException.class(java/io:FileNotFoundException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/FileOutputStream.class(java/io:FileOutputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/IOException.class(java/io:IOException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/ObjectInputStream.class(java/io:ObjectInputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/io/ObjectOutputStream.class(java/io:ObjectOutputStream.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/ArrayList.class(java/util:ArrayList.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/util/Calendar.class(java/util:Calendar.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ArrayAdapter.class(android/widget:ArrayAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Filterable.class(android/widget:Filterable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/BaseAdapter.class(android/widget:BaseAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/ListAdapter.class(android/widget:ListAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/Adapter.class(android/widget:Adapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/widget/SpinnerAdapter.class(android/widget:SpinnerAdapter.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug.class(android/view:ViewDebug.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$ExportedProperty.class(android/view:ViewDebug$ExportedProperty.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$IntToString.class(android/view:ViewDebug$IntToString.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Override.class(java/lang:Override.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Annotation.class(java/lang/annotation:Annotation.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Target.class(java/lang/annotation:Target.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/ElementType.class(java/lang/annotation:ElementType.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/Retention.class(java/lang/annotation:Retention.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/annotation/RetentionPolicy.class(java/lang/annotation:RetentionPolicy.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Error.class(java/lang:Error.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/pm/PackageManager.class(android/content/pm:PackageManager.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/pm/PackageManager$NameNotFoundException.class(android/content/pm:PackageManager$NameNotFoundException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/util/AndroidException.class(android/util:AndroidException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Exception.class(java/lang:Exception.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Throwable.class(java/lang:Throwable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/RuntimeException.class(java/lang:RuntimeException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/IntentSender.class(android/content:IntentSender.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/content/IntentSender$SendIntentException.class(android/content:IntentSender$SendIntentException.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/CharSequence.class(java/lang:CharSequence.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Comparable.class(java/lang:Comparable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Editable.class(android/text:Editable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/GetChars.class(android/text:GetChars.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Spannable.class(android/text:Spannable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/text/Spanned.class(android/text:Spanned.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: java/lang/Appendable.class(java/lang:Appendable.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/MenuInflater.class(android/view:MenuInflater.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/os/BaseBundle.class(android/os:BaseBundle.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: org/xmlpull/v1/XmlPullParser.class(org/xmlpull/v1:XmlPullParser.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/WindowManager$LayoutParams.class(android/view:WindowManager$LayoutParams.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/view/ViewDebug$FlagToString.class(android/view:ViewDebug$FlagToString.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+warning: android/app/Dialog.class(android/app:Dialog.class): major version 51 is newer than 50, the highest major version supported by this compiler.
+It is recommended that the compiler be upgraded.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 warnings
+
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease UP-TO-DATE
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+
+BUILD SUCCESSFUL
+
+Total time: 9.18 secs
+17:29:31.823 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+17:29:31.824 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).
+17:29:31.824 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Plugin Resolution Cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/plugin-resolution) was closed 0 times.
+17:29:31.824 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo7641655482339982982.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo7641655482339982982_6s41uyppyq28bjykd00ozgu7z/InitScript/initscript).
+17:29:31.825 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo7641655482339982982.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo7641655482339982982_6s41uyppyq28bjykd00ozgu7z/InitScript/no_initscript).
+17:29:31.825 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/buildscript).
+17:29:31.826 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/no_buildscript).
+17:29:31.826 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/buildscript).
+17:29:31.826 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/no_buildscript).
+17:29:31.826 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/buildscript).
+17:29:31.827 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/no_buildscript).
+17:29:31.827 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+17:29:31.827 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2).
+17:29:31.828 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache jars (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/jars-1) was closed 0 times.
+17:29:31.829 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin)
+17:29:31.829 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/fileHashes.bin)
+17:29:31.830 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/outputFileStates.bin)
+17:29:31.830 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileSnapshots.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin)
+17:29:31.831 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task history cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts).
+17:29:31.831 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 14, cache instances: 4, modules served from cache: 35, artifacts: 26
+17:29:31.832 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 2 (avg: 0.0 secs, total: 0.0 secs)
+17:29:31.833 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:29:31.833 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.0010 secs
+17:29:31.833 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+17:29:32.187 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:29:32.188 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@1815401b]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@41f4fa12 with state Running
+17:29:32.188 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@1815401b]
+17:29:32.188 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371772188
+17:29:32.189 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:29:32.189 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:29:32.189 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:29:32.190 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:29:32.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:29:32.192 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@329fefc3]
+17:29:32.192 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Thu Jan 15 20:29:32 PST 2015
+17:29:32.192 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:29:32.193 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=f3acba83-dbd6-4ac4-9c95-c1ccda48428d.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:29:32.197 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received class org.gradle.launcher.daemon.protocol.Finished
+17:29:32.198 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2717b92d
+17:29:32.198 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@2717b92d
+17:29:32.198 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: received null
+17:29:32.198 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: stopping connection
+17:29:32.198 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:29:32.199 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: stopping connection
+17:30:43.463 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:54278 to /127.0.0.1:54166.
+17:30:43.467 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 51: received class org.gradle.launcher.daemon.protocol.Build
+17:30:43.467 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:30:43.468 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}.
+17:30:43.468 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo} with connection: socket connection from /127.0.0.1:54166 to /127.0.0.1:54278.
+17:30:43.468 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@3929880d] after 1.0 minutes of idle
+17:30:43.469 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:30:43.469 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:30:43.469 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:30:43.470 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:30:43.472 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:30:43.472 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371843472
+17:30:43.472 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:30:43.472 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}. Dispatching build started information...
+17:30:43.473 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 53: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+17:30:43.473 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {SHELL=/bin/bash, HOME=/Users/Vikramjeet, TMPDIR=/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/, XPC_SERVICE_NAME=com.google.android.studio.15084, LOGNAME=Vikramjeet, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.o7YBujcwBB/Render, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, PATH=/usr/bin:/bin:/usr/sbin:/sbin, XPC_FLAGS=0x0, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KY9f8JZHeb/Listeners, USER=Vikramjeet}
+17:30:43.474 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+17:30:43.474 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 32256). The daemon log file: /Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon/2.2.1/daemon-32256.out.log
+17:30:43.475 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+17:30:43.475 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:30:43.475 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 51: received class org.gradle.launcher.daemon.protocol.CloseInput
+17:30:43.476 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=e210d45b-d08d-4198-9d2c-5b780b595a1e.2]
+17:30:43.476 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+17:30:43.476 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+17:30:43.484 [DEBUG] [org.gradle.internal.resource.transport.http.JavaSystemPropertiesHttpProxySettings] Found java system property 'http.nonProxyHosts': local|*.local|169.254/16|*.169.254/16. Will ignore proxy settings for these hosts.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease UP-TO-DATE
+:app:dexRelease UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease UP-TO-DATE
+:app:assembleRelease
+:app:assemble
+
+BUILD SUCCESSFUL
+
+Total time: 2.889 secs
+17:30:46.344 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+17:30:46.345 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).
+17:30:46.345 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache jars (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/jars-1) was closed 0 times.
+17:30:46.345 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Plugin Resolution Cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/plugin-resolution) was closed 0 times.
+17:30:46.346 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+17:30:46.346 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2).
+17:30:46.346 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo3266729628223889591.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo3266729628223889591_drj4pg2phappqll8t16p4iuwb/InitScript/initscript).
+17:30:46.347 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo3266729628223889591.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo3266729628223889591_drj4pg2phappqll8t16p4iuwb/InitScript/no_initscript).
+17:30:46.347 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/buildscript).
+17:30:46.347 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/no_buildscript).
+17:30:46.348 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/buildscript).
+17:30:46.348 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/no_buildscript).
+17:30:46.348 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/buildscript).
+17:30:46.348 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/no_buildscript).
+17:30:46.349 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/outputFileStates.bin)
+17:30:46.350 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task history cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts).
+17:30:46.350 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 14, cache instances: 4, modules served from cache: 35, artifacts: 26
+17:30:46.351 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 2 (avg: 0.0 secs, total: 0.0010 secs)
+17:30:46.351 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:30:46.352 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.0010 secs
+17:30:46.352 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+17:30:46.353 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:30:46.353 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@3929880d]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@41f4fa12 with state Running
+17:30:46.354 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@3929880d]
+17:30:46.354 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371846354
+17:30:46.354 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:30:46.354 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:30:46.355 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:30:46.355 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:30:46.357 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:30:46.357 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@166afa82]
+17:30:46.357 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Thu Jan 15 20:30:46 PST 2015
+17:30:46.358 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 50: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:30:46.360 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=e210d45b-d08d-4198-9d2c-5b780b595a1e.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:30:46.361 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 51: received class org.gradle.launcher.daemon.protocol.Finished
+17:30:46.362 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@69de5b4
+17:30:46.362 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@69de5b4
+17:30:46.362 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 51: received null
+17:30:46.362 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 50: stopping connection
+17:30:46.362 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:30:46.363 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 50: stopping connection
+17:32:12.087 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:54361 to /127.0.0.1:54166.
+17:32:12.097 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: received class org.gradle.launcher.daemon.protocol.Build
+17:32:12.098 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:32:12.098 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}.
+17:32:12.098 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo} with connection: socket connection from /127.0.0.1:54166 to /127.0.0.1:54361.
+17:32:12.099 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@5273bd7] after 1.0 minutes of idle
+17:32:12.105 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:32:12.105 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:32:12.106 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:32:12.106 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:32:12.108 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:32:12.108 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371932108
+17:32:12.109 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:32:12.109 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}. Dispatching build started information...
+17:32:12.109 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 58: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+17:32:12.110 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {SHELL=/bin/bash, HOME=/Users/Vikramjeet, TMPDIR=/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/, XPC_SERVICE_NAME=com.google.android.studio.15084, LOGNAME=Vikramjeet, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.o7YBujcwBB/Render, __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0, PATH=/usr/bin:/bin:/usr/sbin:/sbin, XPC_FLAGS=0x0, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KY9f8JZHeb/Listeners, USER=Vikramjeet}
+17:32:12.110 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+17:32:12.110 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 32256). The daemon log file: /Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon/2.2.1/daemon-32256.out.log
+17:32:12.111 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+17:32:12.111 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=627d7cab-c233-492b-a4ae-01e85ec8225d,javaHome=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home,daemonRegistryDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleTodo/gradle/daemon,pid=32256,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+17:32:12.114 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: received class org.gradle.launcher.daemon.protocol.CloseInput
+17:32:12.114 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=66092eca-e295-4453-a72a-c2ab4931768a.2]
+17:32:12.115 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+17:32:12.115 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+17:32:12.118 [DEBUG] [org.gradle.internal.resource.transport.http.JavaSystemPropertiesHttpProxySettings] Found java system property 'http.nonProxyHosts': local|*.local|169.254/16|*.169.254/16. Will ignore proxy settings for these hosts.
+Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk UP-TO-DATE
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV72103Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease UP-TO-DATE
+:app:dexRelease UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease UP-TO-DATE
+:app:assembleRelease
+:app:assemble
+
+BUILD SUCCESSFUL
+
+Total time: 2.678 secs
+17:32:14.752 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+17:32:14.753 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).
+17:32:14.753 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2/metadata-2.14/module-metadata.bin)
+17:32:14.753 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/modules-2).
+17:32:14.754 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo5284097685104764884.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo5284097685104764884_e6grr3rsn48aore1j79fe7fqk/InitScript/initscript).
+17:32:14.754 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_initscript class cache for initialization script '/private/var/folders/gy/zqdwc_qd0y3c65fhbfyddf000000gn/T/asLocalRepo5284097685104764884.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/asLocalRepo5284097685104764884_e6grr3rsn48aore1j79fe7fqk/InitScript/no_initscript).
+17:32:14.755 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/buildscript).
+17:32:14.755 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/settings.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/settings_2ksub8sug2juxkcbthlqept78/SettingsScript/no_buildscript).
+17:32:14.755 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/buildscript).
+17:32:14.755 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_6x6g0yfrgfziqg4ywgsogn59p/ProjectScript/no_buildscript).
+17:32:14.756 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/buildscript).
+17:32:14.756 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/app/build.gradle' (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/scripts/build_52nh8bbnxm23a3r1wvbuzil45/ProjectScript/no_buildscript).
+17:32:14.756 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache jars (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/jars-1) was closed 0 times.
+17:32:14.757 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Plugin Resolution Cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/gradle/caches/2.2.1/plugin-resolution) was closed 0 times.
+17:32:14.757 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts/outputFileStates.bin)
+17:32:14.758 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task history cache (/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo/.gradle/2.2.1/taskArtifacts).
+17:32:14.758 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 14, cache instances: 4, modules served from cache: 35, artifacts: 26
+17:32:14.758 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 2 (avg: 0.0 secs, total: 0.0 secs)
+17:32:14.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolved configuration cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+17:32:14.759 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.0010 secs
+17:32:14.759 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+17:32:15.148 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+17:32:15.149 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@5273bd7]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@41f4fa12 with state Running
+17:32:15.149 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@5273bd7]
+17:32:15.149 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1421371935149
+17:32:15.150 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as idle, address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:32:15.150 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking idle by address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:32:15.150 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:32:15.151 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:32:15.153 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:32:15.153 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@6afd9125]
+17:32:15.153 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Thu Jan 15 20:32:15 PST 2015
+17:32:15.153 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 55: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:32:15.154 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=66092eca-e295-4453-a72a-c2ab4931768a.1, currentDir=/Users/Vikramjeet/Documents/AndroidProjects/SimpleToDo}
+17:32:15.158 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: received class org.gradle.launcher.daemon.protocol.Finished
+17:32:15.159 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6c9a6b5a
+17:32:15.159 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@6c9a6b5a
+17:32:15.159 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 56: received null
+17:32:15.159 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 55: stopping connection
+17:32:15.159 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:32:15.160 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 55: stopping connection
+17:41:29.643 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:54728 to /127.0.0.1:54166.
+17:41:29.647 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 61: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+17:41:29.648 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: StopWhenIdle[id=06bab516-5e8b-4a73-bd18-13319953dfd5.1]
+17:41:29.648 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=06bab516-5e8b-4a73-bd18-13319953dfd5.1].
+17:41:29.648 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=06bab516-5e8b-4a73-bd18-13319953dfd5.1] with connection: socket connection from /127.0.0.1:54166 to /127.0.0.1:54728.
+17:41:29.648 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy: false
+17:41:29.649 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop requested and daemon idle. The daemon is running a build: false
+17:41:29.649 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: dispatching class org.gradle.launcher.daemon.protocol.Success
+17:41:29.649 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Idle timeout: daemon has stopped.
+17:41:29.649 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=06bab516-5e8b-4a73-bd18-13319953dfd5.1]
+17:41:29.649 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+17:41:29.650 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+17:41:29.650 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:41:29.650 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:41:29.651 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 61: received class org.gradle.launcher.daemon.protocol.Finished
+17:41:29.651 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@765b0046
+17:41:29.651 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:41:29.652 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@765b0046
+17:41:29.652 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 61: received null
+17:41:29.652 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+17:41:29.652 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: stopping connection
+17:41:29.652 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:41:29.653 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: stopping connection
+17:41:29.655 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+17:41:29.655 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Address removed from registry.
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+17:41:29.656 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [a2c638e0-de70-4ddb-bd7b-4aa38c5553de port:54166, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+17:41:29.657 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+17:41:29.657 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+17:41:29.658 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

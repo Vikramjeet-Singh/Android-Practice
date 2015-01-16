@@ -1,42 +1,58 @@
 package com.example.vikramjeet.simpletodo;
 
-import android.content.Intent;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import org.apache.commons.io.FileUtils;
-
-import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 
-public class ToDoActivity extends ActionBarActivity {
+public class ToDoActivity extends ActionBarActivity implements EditItemFragment.EditItemFragmentListener {
 
-    private final int REQUEST_CODE = 0;
-    private ArrayList<String> items;
-    private ArrayAdapter<String> itemsAdapter;
+    private ArrayList<Item> items;
+    private ToDoAdapter itemsAdapter;
     private ListView lvItems;
+    private EditText newItemText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do);
+
+        // Read data from the file
+        readItems(getApplicationContext());
+
+        newItemText = (EditText) findViewById(R.id.newItemText);
         lvItems = (ListView) findViewById(R.id.lvItems);
-        readItems();
-        itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+
+        itemsAdapter = new ToDoAdapter(this, items);
         lvItems.setAdapter(itemsAdapter);
         setupListViewListener(lvItems);
+    }
+
+    private void showDialogView(String itemToEdit, int index) {
+        // get FragmentManager
+        FragmentManager manager = getSupportFragmentManager();
+
+        // get fragment
+        EditItemFragment fragment = EditItemFragment.newInstance(itemToEdit, index);
+        fragment.show(manager, "fragment_edit_item");
     }
 
 
@@ -62,34 +78,56 @@ public class ToDoActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-            // Extract newItem value and index from result extras
-            String newItem = data.getExtras().getString("newItem");
-            int index = data.getExtras().getInt("indexToEdit");
+    public void updateItem(String newItem, int index) {
 
-            // Update ArrayAdapter with new value
-            itemsAdapter.insert(newItem, index);
+        // get Calendar object
+        Calendar calendar = Calendar.getInstance();
 
-            // Remove previous entry and update UI
-            items.remove(++index);
-            itemsAdapter.notifyDataSetChanged();
-            writeItems();
-        }
+        // get today's date and add 1 to it for tomorrow's date
+        Date today = calendar.getTime();
+        calendar.add(Calendar.DATE, 1);
+        Date tomorrow = calendar.getTime();
+
+        // Create an item object
+        Item updatedItem = new Item(newItem, tomorrow);
+
+        // Update ArrayAdapter with new value
+        itemsAdapter.insert(updatedItem, index);
+
+        // Remove previous entry and update UI
+        items.remove(++index);
+        itemsAdapter.notifyDataSetChanged();
+
+        // Save data to the file
+        writeItems(getApplicationContext());
     }
 
     // Button callback methods
 
     public void didClickAddItem(View v) {
         // Retrieve newItem textfield view from resources
-        EditText newItem = (EditText) findViewById(R.id.newItemText);
-        String newItemStr = newItem.getText().toString();
-        itemsAdapter.add(newItemStr);
-//        Why not below line?
-//        items.add(newItemStr);
-        newItem.setText("");
-        writeItems();
+        String newItemStr = newItemText.getText().toString();
+
+        // get Calendar object
+        Calendar calendar = Calendar.getInstance();
+
+        // get today's date and add 1 to it for tomorrow's date
+        Date today = calendar.getTime();
+        calendar.add(Calendar.DATE, 1);
+        Date tomorrow = calendar.getTime();
+
+        // Create an item object
+        Item newItem = new Item(newItemStr, tomorrow);
+
+        // Add new value to ArrayAdapter
+        itemsAdapter.add(newItem);
+
+//      Why not below line?
+//      items.add(newItemStr);
+        newItemText.setText("");
+
+        // Save data to the file
+        writeItems(getApplicationContext());
     }
 
     // ListView Listener methods
@@ -100,7 +138,7 @@ public class ToDoActivity extends ActionBarActivity {
                 public boolean onItemLongClick(AdapterView<?> adapter, View item, int pos, long id) {
                     items.remove(pos);
                     itemsAdapter.notifyDataSetChanged();
-                    writeItems();
+                    writeItems(getApplicationContext());
                     return true;
                 }
             });
@@ -108,38 +146,53 @@ public class ToDoActivity extends ActionBarActivity {
         lv.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> adapter, View item, int pos, long id) {
-                        // Create intent to launch Edit Activity
-                        Intent editIntent = new Intent(ToDoActivity.this, EditItemActivity.class);
-                        // Pass row data to intent
-                        editIntent.putExtra("itemToEdit", ((TextView) item).getText().toString());
-                        editIntent.putExtra("indexToEdit", pos);
-                        startActivityForResult(editIntent, REQUEST_CODE);
+                        // Create DialogFragment to edit an item
+                        Item itemToEdit = items.get(pos);
+                        String itemText = itemToEdit.itemText;
+                        showDialogView(itemText, pos);
                     }
                 }
         );
     }
 
+
+    public void onFinishEditDialog(String itemToEdit, int indexToUpdate) {
+        this.updateItem(itemToEdit, indexToUpdate);
+    }
+
     // Read method
 
-    private void readItems() {
-        File filesDir = getFilesDir();
-        File todoFile = new File(filesDir, "todo.txt");
+    private void readItems(Context context) {
+        FileInputStream fis;
         try {
-            items = new ArrayList<String>(FileUtils.readLines(todoFile));
+            fis = context.openFileInput("tod.txt");
+            ObjectInputStream oi = new ObjectInputStream(fis);
+            items = (ArrayList) oi.readObject();
+            oi.close();
+        } catch (FileNotFoundException e) {
+            Log.e("InternalStorage", e.getMessage());
         } catch (IOException e) {
-            new ArrayList<String>();
+            Log.e("InternalStorage", e.getMessage());
+        }
+        catch (ClassNotFoundException e) {
+            Log.e("InternalStorage", e.getMessage());
         }
     }
 
     // Write method
 
-    private void writeItems() {
-        File filesDir = getFilesDir();
-        File todoFile = new File(filesDir, "todo.txt");
+    private void writeItems(Context context) {
         try {
-            FileUtils.writeLines(todoFile, items);
-        } catch (IOException e) {
-            e.printStackTrace();
+            FileOutputStream fos = context.openFileOutput("tod.txt", Context.MODE_PRIVATE);
+            ObjectOutputStream of = new ObjectOutputStream(fos);
+            of.writeObject(items);
+            of.flush();
+            of.close();
+            fos.close();
         }
+        catch (Exception e) {
+            Log.e("InternalStorage", e.getMessage());
+        }
+
     }
 }

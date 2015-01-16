@@ -236,3 +236,33 @@ Total time: 3.668 secs
 18:45:40.715 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
 18:45:40.716 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
 18:45:40.717 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+19:03:37.960 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:53928 to /127.0.0.1:53002.
+19:03:37.963 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+19:03:37.963 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: StopWhenIdle[id=52945927-3239-4546-8f33-d01273c8d833.1]
+19:03:37.963 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=52945927-3239-4546-8f33-d01273c8d833.1].
+19:03:37.964 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=52945927-3239-4546-8f33-d01273c8d833.1] with connection: socket connection from /127.0.0.1:53002 to /127.0.0.1:53928.
+19:03:37.964 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy: false
+19:03:37.964 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop requested and daemon idle. The daemon is running a build: false
+19:03:37.965 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: dispatching class org.gradle.launcher.daemon.protocol.Success
+19:03:37.965 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Idle timeout: daemon has stopped.
+19:03:37.965 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=52945927-3239-4546-8f33-d01273c8d833.1]
+19:03:37.965 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+19:03:37.966 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received class org.gradle.launcher.daemon.protocol.Finished
+19:03:37.966 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@eee7417
+19:03:37.966 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+19:03:37.966 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received null
+19:03:37.967 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received end-of-input from client.
+19:03:37.966 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@eee7417
+19:03:37.967 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [cbf485e7-3730-4303-92a7-2cbe69343e04 port:53002, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+19:03:37.968 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: stopping connection
+19:03:37.968 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [cbf485e7-3730-4303-92a7-2cbe69343e04 port:53002, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+19:03:37.970 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: stopping connection
+19:03:37.970 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+19:03:37.971 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+19:03:37.973 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+19:03:37.973 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Address removed from registry.
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+19:03:37.975 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [cbf485e7-3730-4303-92a7-2cbe69343e04 port:53002, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]]
+19:03:37.975 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+19:03:37.975 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+19:03:37.976 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
